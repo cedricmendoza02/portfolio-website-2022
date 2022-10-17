@@ -8,19 +8,20 @@ import {
 import { Root } from "./routes"
 import { Main } from "./components"
 
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root />,
-      children: [
-        {
-          path: "/main",
-          element: <Main />,
-        }
-      ]
-    },
-  ]);
+// const router = createBrowserRouter([
+//     {
+//       path: "/",
+//       element: <Root />,
+//       children: [
+//         {
+//           path: "/",
+//           element: <Main />,
+//         }
+//       ]
+//     },
+//   ]);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<RouterProvider router={router} />)
+// root.render(<RouterProvider router={router} />)
+root.render(<Main />)
