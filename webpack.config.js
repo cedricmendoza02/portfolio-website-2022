@@ -1,8 +1,9 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     devtool: 'source-map',
     // bypass asset size error
     performance: {
@@ -67,6 +68,11 @@ module.exports = {
             filename: 'index.html',
             template: 'src/index.html',
             chunks: ['index']
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: 'src/output.css', to: '[name][ext]'}
+            ]
         })
     ]
 }
