@@ -6,6 +6,8 @@ import { gsap } from 'gsap';
 import About from './About';
 import Projects from './Projects'
 import TechSkills from './TechSkills'
+import Credentials from './Credentials';
+import Footer from './Footer';
 
 const Main = () => {
   const container = useRef()
@@ -16,12 +18,12 @@ const Main = () => {
 
   return (
     <div>
-      <div className={`flex flex-col justify-center gap-6 p-3 h-screen text-white bg-black`} ref={container}>
+      <div className={`flex flex-col justify-center gap-6 p-3 h-screen text-white bg-black sm:text-lg`} ref={container}>
         <div className="rounded-md">
             <h1 className="font-light">Hi,
               I am
               <br />
-              <span className="text-6xl font-extrabold"> Cedric Mendoza</span>
+              <span className="text-6xl font-extrabold sm:text-8xl lg:text-9xl"> Cedric <br />Mendoza</span>
             </h1>
             <p className="">Web/Mobile Developer</p>
           </div>
@@ -36,6 +38,8 @@ const Main = () => {
       <About />
       <TechSkills />
       <Projects />
+      <Credentials />
+      <Footer />
     </div>
   )
 }

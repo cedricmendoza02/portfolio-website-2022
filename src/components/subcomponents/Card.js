@@ -3,10 +3,13 @@ import SectionHeader from './SectionHeader';
 
 const Card = ({children, title, customStyle}) => {
   return (
-    <div className={`p-3 ${customStyle}`} >
+    <div>
+      <div className={`p-3 ${customStyle}`} >
         <SectionHeader text={title} />
-        {children}
+          {children}
+      </div>
     </div>
+    
   )
 }
 

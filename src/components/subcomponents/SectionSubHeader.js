@@ -2,7 +2,7 @@ import React from 'react'
 
 const SectionSubHeader = ({text}) => {
   return (
-    <h3 className={`px-4 my-2 text-xl`}>{text}</h3>
+    <h3 className={`text-lg text-center`} style={{margin: 50, fontSize: 24}}>{text}</h3>
   )
 }
 
