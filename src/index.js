@@ -6,7 +6,7 @@ import {
     Route
   } from "react-router-dom";
 import { Root } from "./routes"
-import { Main } from "./components"
+import { Main, About, TechSkills, Projects } from "./components"
 
 // const router = createBrowserRouter([
 //     {
