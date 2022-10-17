@@ -8,6 +8,7 @@ import Projects from './Projects'
 import TechSkills from './TechSkills'
 import Credentials from './Credentials';
 import Footer from './Footer';
+import resume from '../assets/resume.pdf'
 
 const Main = () => {
   const container = useRef()
@@ -15,6 +16,10 @@ const Main = () => {
   useEffect(() => {
     gsap.from(container.current, {opacity: 0, duration: 1, delay: 1})
   }, [])
+
+  const handleClick = () => {
+
+  }
 
   return (
     <div>
@@ -34,6 +39,7 @@ const Main = () => {
               <li aria-label='Twitter Page'><a href="https://twitter.com/CedricMendoza02"><FaTwitter /></a></li>
             </ul>
           </div>
+          <a href={resume} download target="_blank" className="p-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white self-start">Download CV</a>
         </div>
       <About />
       <TechSkills />

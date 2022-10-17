@@ -10,7 +10,7 @@ const ListItem = ({title, description, imgSrc, url}) => {
 
         </figure>
         <p className="font-light">{description}</p>
-        <a href={url} target="_blank" className="p-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Check it out</a>
+        <a href={url} target="_blank" className="p-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white lg:self-center">Check it out</a>
     </li>
   )
 }
