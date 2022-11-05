@@ -9,10 +9,14 @@ import { ListItem } from './subcomponents';
 
 const realProjects = [
     {
-        title: "Paste Notes Chrome Extension(WIP)",
-        description: "A chrome extension where a user can paste pre-defined notes from the chrome storage on to the target input field. Working on icons to get it published to the chrome store.",
+        title: "Paste Notes Chrome Extension(Published)",
+        description: `A chrome extension where a 
+        user can paste pre-defined notes from the 
+        chrome storage on to the target input field. 
+        Some backend programming is part of creating the chrome extension.
+        `,
         imgSrc: chromeExt,
-        url: 'https://github.com/cedricmendoza02/paste-notes-chrome-extension'
+        url: 'https://chrome.google.com/webstore/detail/paste-notes/fahjckjmikeeekgjpcfohnkgpfdemeii'
     },
     {
         title: "React Native Pomodoro Clock(WIP)",
