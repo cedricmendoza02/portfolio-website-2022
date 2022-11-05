@@ -13,7 +13,8 @@ const realProjects = [
         description: `A chrome extension where a 
         user can paste pre-defined notes from the 
         chrome storage on to the target input field. 
-        Some backend programming is part of creating the chrome extension.
+        Created with ReactJS, TailwindCSS and Webpack as the bundler.
+        The storage and the rest of the app uses the chrome API.
         `,
         imgSrc: chromeExt,
         url: 'https://chrome.google.com/webstore/detail/paste-notes/fahjckjmikeeekgjpcfohnkgpfdemeii'
